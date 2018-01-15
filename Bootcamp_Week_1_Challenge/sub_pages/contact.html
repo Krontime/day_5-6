@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../reset.css">
+        <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="./contact.css">
+        <title>India Spice Menu</title>
+    </head>
+    <body id="background">
+        <nav class="navigation" id="container">
+            <nav class="navigation">
+                <a href="../index.html" id="navbar_logo"><img src="../images/logo.png" alt="india_spice_logo" id="logo">India Spice</a> 
+                <a href="../index.html">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </nav>
+        <div id="form_container">
+        <form id="contact_form" method="post">
+            <fieldset>
+                <legend>Contact Form:</legend>
+                <div class="input_sections">
+                    <label for="name" class="field">Name:*</label>
+                    <input class="field" type="text" name="name" id="name" placeholder="Full Name" required autocomplete="on"/>
+                </div>
+                <div class="input_sections">
+                    <label for="email" class="field">Email:*</label>
+                    <input class="field" type="email" name="email" id="email" placeholder="fakemail@mail.com" required autocomplete="on"/>
+                </div>
+                <div class="input_sections">
+                    <label for="telephone" class="field">Phone Number:</label>
+                    <input type="tel" class="field" id="telephone" name="telephone" pattern=“08[3-9]{1}[0-9]{7}” title="08 followed by any number from 3-9 then a 7 digit mobile number." placeholder="xxx (xx) xxx-xxxx"/>
+                </div>
+                <div class="input_sections">
+                     <label for="date" class="field">Date:</label>
+                     <input class="field" type="date" name="date" id="date"/>
+                </div>
+                <div class="input_sections">
+                    <lable for="people" class="field">How Many People?:</lable>
+                    <input list="people" class="field" placeholder="# of People" id="people">
+                    <datalist id="numbers">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                        <option value="11">
+                        <option value="12+">
+                    </datalist>
+                </div>
+                <div class="input_sections">
+                     <input class="field" type="submit" name="submit"/>
+                </div>
+                <div class="extratext">
+                     NOTE: The * is the required fields needed to be filled out!
+                </div>
+            </fieldset>
+        </form>
+        </div>
+    </body>
+</html>

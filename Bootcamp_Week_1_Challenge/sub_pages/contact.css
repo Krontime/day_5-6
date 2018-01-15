@@ -1,0 +1,71 @@
+         #container{
+            box-sizing: border-box;
+            padding-top: 20px;
+            width: 100vw;
+            margin: auto;
+            display: flex;
+         }
+         #form_container{
+            box-sizing: border-box;
+            margin: auto;
+            display: flex;
+            width: 95vw;
+         }
+         #contact_form{
+             box-sizing: border-box;
+             width: 95vw;
+             padding-left: 10px;
+             padding-right: 30px;
+             padding-top: 10px;
+         }
+         #people{
+             padding-left: 10px;
+         }
+         legend{
+            font-size: 30px;
+            background-color: rgba(255, 180, 75,1);
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+         input{
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         fieldset{
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(255, 150, 75,1);
+            width: 95%;
+            font-family: 'Rajdhani', sans-serif;
+         }
+          label.field{
+            display: block;
+            text-align: left;
+            width: 20%;
+            float: left;
+         }
+         .field{
+            padding: 6px 10px;
+         }
+         .input_sections{
+            display: flex;
+            width: 60vw;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding-top: 10px;
+         }
+         .extratext{
+            box-sizing: border-box;
+            padding-top: 20px;
+            font-size: 0.7em;
+            color: rgba(255,50,50,1);
+         }
+         .selection{
+            box-sizing: border-box;
+            padding-right: 10px;
+         }

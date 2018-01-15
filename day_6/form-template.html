@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./reset.css">
+      <style type="text/css">
+
+      body{
+         font-family: 'Macondo', cursive;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+         }
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: rgba(20,210,200,1);
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(0,190,140,1);
+         }
+          label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+         }
+         
+         .field{
+            padding: 6px 10px;
+         }
+         .input_sections{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-sizing: border-box;
+            padding-right: 25%;
+            padding-top: 20px;
+         }
+         .extratext{
+            box-sizing: border-box;
+            padding-top: 20px;
+            font-size: 0.7em;
+            color: rgba(255,50,50,1);
+         }
+         .cc{
+            width: 40px;
+         }
+         .cvv{
+            width: 18px;
+         }
+         .cvvfield{
+            padding-left: 15px;
+         }
+         .checkbox{
+            box-sizing: border-box;
+            width: 20px;
+            padding-left: 10px;
+         }
+         .selection{
+            box-sizing: border-box;
+            padding-right: 10px;
+         }
+         .radio{
+            width: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <form id="basic_form" method="post">
+            <fieldset>
+               <legend>Registration</legend>
+                  
+                  <div class="input_sections">
+                     <label for="email" class="field">Email:*</label>
+                     <input class="field" type="email" name="email" id="email" placeholder="fakemail@mail.com" required autocomplete="on" autofocus/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <lable for="fname" class="field">First Name:*</lable>
+                     <input class="field" type="text" name="fname" id="fname" placeholder="First Name" required autocomplete="on"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="telephone" class="field">Telephone:</label>
+                     <input id=“telephone” name=“telephone type=“tel” pattern=“08[3-9]{1}[0-9]{7}” title="08 followed by 3-9 then a 7 digit mobile number." placeholder="(xxx) xxx-xxxx"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="website" class="field">Website:</label>
+                     <input class="field" type="url" name="website" id="website" placeholder="http://websitename.com" autocomplete="on"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="password" class="field">Password:*</label>
+                     <input class="field" type="password" name="password" id="password" placeholder="password" required autocomplete="on"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="passport" class="field">Pasport Number:*</label>
+                     <input class="field" type="text" name="passport" id="passport" placeholder="xxxxxxxX" required pattern="[0-9]{7}[A-Z]" title="7 numbers followed by an uppercase letter."/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="postalcode" class="field">Eircode:*</label>
+                     <input class="field" type="text" name="postalcode" id="postalcode" placeholder="a11 xxxx" required pattern="[a-z A-Z]{1}[0-9]{2} [a-z A-Z 0-9]{4}" title="A letter, followed by 2 numbers, a space, and a group of four letters or numbers."/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="creditcard" class="field">Creditcard:*</label>
+                     <input class="field" type="text" name="creditcard" id="creditcardmain" placeholder="xxxx-xxxx-xxxx-xxxx" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Four numbers followed by a dash, four numbers followed by a dash, four numbers followed by a dash, and another four numbers followed by a dash,."/>
+                     <label for="cvv" class="cvvfield">CVV:*</label>
+                     <input class="cvv" type="text" name="cvv" id="cvv" placeholder="xxx" required pattern="[0-9]{3}" title="Three numbers on the back of your card."/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="date" class="field">Today's Date:</label>
+                     <input class="field" type="date" name="date" id="date"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="starter" class="selection">Would you like?:</label>
+                     Starter:<input class="checkbox" type="checkbox" name="starter" id="starter" value="starter"/>
+                     <label for="main" class="selection"></label>
+                     Main:<input class="checkbox" type="checkbox" name="main" id="main" value="main"/>
+                     <label for="dessert" class="selection"></label>
+                     Dessert:<input class="checkbox" type="checkbox" name="dessert" id="dessert" value="dessert"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="male" class="selection">Gender:</label>
+                     Male:<input class="radio" type="radio" name="male" id="male"/>
+                     <label for="dessert" class="selection"></label>
+                     Female:<input class="radio" type="radio" name="female" id="female"/>
+                     <label for="dessert" class="selection"></label>
+                     Other:<input class="radio" type="radio" name="other" id="other"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     What Element?:<select class="input_sections" id="element">
+                        <option value="water">Water</option>
+                        <option value="earth">Earth</option>
+                        <option value="fore">Fire</option>
+                        <option value="air">Air</option>
+                        <option value="metal">Metal</option>
+                        <option value="wood">Wood</option>
+                     </select>
+                  </div>
+                  
+                  <div class="input_sections">
+                        What EDM Genre?:<input list="edmgenre" placeholder="EDM Genre">
+                           <datalist id="edmgenre">
+                              <option value="Trance">
+                              <option value="Hardstyle">
+                              <option value="Progressive">
+                              <option value="Dubstep">
+                              <option value="House">
+                              <option value="Chillout">
+                           </datalist>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <label for="volume" class="field">Starting Volume:</label>
+                     <input class="field" type="range" name="volume" id="volume" min="1" max="100"/>
+                  </div>
+                  
+                  <div class="input_sections">
+                     <input class="field" type="submit" name="submit"/>
+                  </div>
+                  <div class="extratext">
+                     NOTE: The * is the required fields needed to be filled out!
+                  </div>
+                  
+            </fieldset>
+         </form>
+    </div>
+   </body>
+
+</html>
