@@ -1,0 +1,141 @@
+
+    .navigation{
+        width: 100%;
+        background-color: rgb(255, 200, 65);
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .page{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .main{
+        font-family: 'Rajdhani', sans-serif;
+        display: flex;
+
+    }
+    .content{
+        align-items: center;
+        box-sizing: border-box;
+        padding: 5px 5px 5px 0px;
+        font-size: 0.9rem;
+    }
+    .video{
+        display: flex;
+        align-items: center;
+        width: 350px;
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
+        display: flex;
+        flex: 1;
+        font-family: 'Macondo', cursive;
+        font-size: 1.2rem;
+        justify-content: flex-start;
+        align-items: flex-end;
+        box-sizing: border-box;
+        padding: 10px;
+        border-left: 2px solid rgb(235, 180, 45);
+        border-bottom: 2px solid rgb(235, 180, 45);
+    }
+    h3{
+        padding-top: 5px;
+        font-size: 1.5rem
+    }
+    
+    #navbar_logo{
+        flex: 2;
+        justify-content: flex-start;
+    }
+    #background{
+        background-image: url(./images/background.jpg);
+        background-attachment: fixed;
+    }
+    #spices{
+        width: 40vw;
+        height: 40vw;
+    }
+    #veg_curry{
+        width: 65vw;
+        height: 45vw;
+    }
+    #logo{
+        width: 15vw;
+        height: 15vw;
+    }
+        
+    @media screen and (min-width: 500px){
+        .navigation{
+        width: 100%;
+        background-color: rgb(255, 200, 65);
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        }
+        .content{
+        align-items: center;
+        box-sizing: border-box;
+        padding: 5px 5px 5px 0px;
+        font-size: 1.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .video{
+        align-items: flex-start;
+        width: 50vw;
+        }
+    
+        a{
+        color: black;
+        text-decoration: none;
+        font-family: 'Macondo', cursive;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 10px;
+        border-left: 2px solid rgb(235, 180, 45);
+        border-bottom: 2px solid rgb(235, 180, 45);
+        }
+        h3{
+        padding-top: 5px;
+        font-size: 2.5rem
+        }
+     
+        #logo{
+        width: 7vw;
+        height: 7vw;
+        }    
+        #navbar_logo{
+        justify-content: flex-start;
+        align-items: baseline;
+        border: none;
+        font-size: 3rem;   
+        }
+        #spices{
+        width: 25vw;
+        height: 25vw;
+        padding-left: 30px;
+        }
+        #veg_curry{
+        width: 50vw;
+        height: 40vw;
+        padding-top: 20px;
+        }
+        #explanation{
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 40px;
+        }
+        #history{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 40px;
+        }
+        #video_section{
+        flex-direction: column;
+        }
+    }
